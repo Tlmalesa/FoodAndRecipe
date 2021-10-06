@@ -1,0 +1,41 @@
+<!--<a ><button type="button" class="btn btn-dark">back</button></a>-->
+
+
+
+
+<ngx-ui-loader></ngx-ui-loader>
+
+<div ngxUiLoaderBlurred>     
+<!--For Page-->
+<div class="page">
+    <!--For Row containing all card-->
+    <div class="row" >
+        <!--Card -->
+        <div class="col-sm-3" *ngFor="let recipe of recipes" >
+            <div class="card card-cascade card-ecommerce wider shadow mb-5 " >
+                <!--Card image-->
+                
+                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src={{recipe.recipe.image}} alt=""> <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a> </div>
+                <!--Card Body-->
+                <div class="card-body card-body-cascade text-center">
+                  
+                    <!--Card Title-->
+                    <h4 class="card-title"><strong><a href="">{{recipe.recipe.label}}</a></strong></h4> 
+              
+                    <!--Card footer-->
+                    
+                </div>
+                <div class="card-footer">
+                    <button (click)="openModal(recipe)" class="btn " type="button">View Ingredients</button>
+                  </div>
+            </div>
+        </div>
+        <div class="center">
+            <h1  *ngIf="recipes.length === 0">{{errorMessage}}</h1>
+        </div>
+        
+    </div>
+</div>
+

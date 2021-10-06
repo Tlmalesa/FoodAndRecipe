@@ -1,0 +1,35 @@
+.center{
+  
+  width: 100%;
+  padding: 20%;
+}
+.resize-center{
+  margin-right: 15%;
+}
+.form-control{
+  width: 180%;
+  margin: auto;
+  height: 59px;
+}
+
+
+.center-screen {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.button {
+  background-color: #6B8E23;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
